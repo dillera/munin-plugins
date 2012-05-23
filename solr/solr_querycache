@@ -29,7 +29,7 @@
 import httplib, sys, re
 from lxml import etree
 
-conn = httplib.HTTPConnection("localhost:8983")
+conn = httplib.HTTPConnection("localhost:9000")
 conn.request("GET", "/solr/admin/stats.jsp")
 res = conn.getresponse()
 
